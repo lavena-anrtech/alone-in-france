@@ -1,0 +1,202 @@
+<header>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-logo {
+      height: 48px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .hero img {
+      width: 100%;
+      display: block;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .btn {
+      background: black;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    .feature img {
+      width: 100%;
+      display: block;
+    }
+
+    .shop {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .product img {
+      width: 100%;
+    }
+
+    .contact {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .email a,
+    .instagram a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: #111;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+
+    .email-icon,
+    .ig-icon {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+
+    .address {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+
+  <div class="header-inner">
+    <img id="logo" class="site-logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img id="hero">
+  <div class="hero-overlay">
+    <a href="https://ig.me/m/aloneinfrance" target="_blank" class="btn">
+      SHOP NOW
+    </a>
+  </div>
+</section>
+
+<section class="feature">
+  <img id="back">
+</section>
+
+<section class="shop" id="shop">
+  <h2>SHOP</h2>
+
+  <div class="products">
+    <div class="product">
+      <img id="black">
+      <p>Black Sweatsuit</p>
+    </div>
+
+    <div class="product">
+      <img id="grey">
+      <p>Grey Sweatsuit</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>CONTACT</h2>
+
+  <p class="email">
+    <a href="mailto:aloneinfrance.paris@gmail.com">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" class="email-icon">
+      aloneinfrance.paris@gmail.com
+    </a>
+  </p>
+
+  <p class="instagram">
+    <a href="https://instagram.com/aloneinfrance" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="ig-icon">
+      @aloneinfrance
+    </a>
+  </p>
+
+  <p class="address">
+    2559 White Plains Rd.<br>
+    Bronx, NY 10467
+  </p>
+</section>
+
+<footer>
+  <p>ALONE IN FRANCE — PARIS</p>
+</footer>
+
+<script>
+document.getElementById("logo").src = "https://i.postimg.cc/GtRkqDfZ/Logo.png";
+document.getElementById("hero").src = "https://i.postimg.cc/PfbbN6pY/hero_set_png.png";
+document.getElementById("black").src = "https://i.postimg.cc/h488hCzP/black_front_png.png";
+document.getElementById("grey").src = "https://i.postimg.cc/L4kkhyYj/grey_back_png.png";
+document.getElementById("back").src = "https://i.postimg.cc/tRdd7rZn/black_back_png.png";
+</script>
