@@ -73,11 +73,6 @@ nav a {
   display: inline-block;
 }
 
-.feature img {
-  width: 100%;
-  display: block;
-}
-
 .shop {
   padding: 70px 20px;
   text-align: center;
@@ -85,7 +80,7 @@ nav a {
 
 .products {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
@@ -93,6 +88,16 @@ nav a {
 
 .product img {
   width: 100%;
+}
+
+.product p {
+  margin: 8px 0 4px;
+}
+
+.size {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .contact {
@@ -155,23 +160,41 @@ footer {
   </div>
 </section>
 
-<section class="feature">
-  <img src="https://i.postimg.cc/tRdd7rZn/black_back_png.png">
-</section>
-
 <section class="shop" id="shop">
   <h2>SHOP</h2>
 
   <div class="products">
+
     <div class="product">
       <img src="https://i.postimg.cc/h488hCzP/black_front_png.png">
       <p>Black Sweatsuit</p>
+      <p class="size">Sizes: Small – 3X</p>
     </div>
 
     <div class="product">
       <img src="https://i.postimg.cc/L4kkhyYj/grey_back_png.png">
       <p>Grey Sweatsuit</p>
+      <p class="size">Sizes: Small – 3X</p>
     </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/wBNGFVX5/Pink-Grey-Paris-Set.jpg">
+      <p>Pink/Grey Paris Set</p>
+      <p class="size">Sizes: Small – 3X</p>
+    </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/sfTwY8kH/Green-Grey-Paris-Set.jpg">
+      <p>Green/Grey Paris Set</p>
+      <p class="size">Sizes: Small – 3X</p>
+    </div>
+
+    <div class="product" style="grid-column: span 2;">
+      <img src="https://i.postimg.cc/XvKgpDKP/Black-White-Paris-Set.jpg">
+      <p>Black/White Paris Set</p>
+      <p class="size">Sizes: Small – 3X</p>
+    </div>
+
   </div>
 </section>
 
